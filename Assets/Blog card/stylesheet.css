@@ -12,8 +12,15 @@
   --color-highlight-secondary: #b7f9e9;
   --border-radius-primary: 32px;
 }
-body {
+@media (min-width: 576px) {
+  :root {
+    --font-size-title: 40px;
+ }
+}
+
+.list-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -21,15 +28,18 @@ body {
   padding: 0;
   margin: 0;
 }
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (min-width: 1024px) {
+  .list-card {
+    flex-direction: row;
+ }
+}
+
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media (min-width: 576px) {
-  :root {
-    --font-size-title: 40px;
- }
-}
+
 .card {
   max-width: 960px;
   border-radius: var(--border-radius-primary);
