@@ -13,12 +13,12 @@ To start the project, just open the file `index.html` in your preferred browser.
 
 ## Web Version 
 <p align="center">
-    ![Alt text](https://github.com/antoinefradin/HTML-CSS-JS-Tests/blob/main/Assets/Blog%20card/img/Web_version.PNG)
+    <img src="https://github.com/antoinefradin/HTML-CSS-JS-Tests/blob/main/Assets/Blog%20card/img/Web_version.PNG" alt="web"/>
 </p>
 
 ## Mobile Version
 <p align="center">
-    ![Alt text](https://github.com/antoinefradin/HTML-CSS-JS-Tests/blob/main/Assets/Blog%20card/img/Mobile_version.PNG)
+    <img src="https://github.com/antoinefradin/HTML-CSS-JS-Tests/blob/main/Assets/Blog%20card/img/Mobile_version.PNG" alt="web"/>
 </p>
 
 
