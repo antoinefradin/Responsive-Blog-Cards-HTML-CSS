@@ -1,37 +1,20 @@
 /*## This is CSS file"*/
 
 :root {
-  --font-family-primary: 'Vollkorn', serif;
+  --font-family-primary: 'Poppins', serif;
   --font-family-secondary: 'PT Sans', sans-serif;
   --font-size-title: 32px;
   --line-height-title: 1.4;
-  --font-size-caption: 14px;
+  --font-size-caption: 11px;
   --line-height-caption: 1.2;
   --color-text: #222022;
-  --color-highlight-primary: #ffef7e;
-  --color-highlight-secondary: #b7f9e9;
+  --color-highlight-primary: #ceff7e;
+  --color-highlight-secondary: #a8dab4;
   --border-radius-primary: 32px;
 }
 @media (min-width: 576px) {
   :root {
-    --font-size-title: 40px;
- }
-}
-
-.list-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-}
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (min-width: 1024px) {
-  .list-card {
-    flex-direction: row;
+    --font-size-title: 20px;
  }
 }
 
@@ -40,15 +23,35 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.list-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto; /*100vw;*/
+  height: auto; /*100vh;*/
+  padding: 0;
+  margin: 0;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (min-width: 1200px) {
+  .list-card {
+    flex-direction: row;
+ }
+}
+
+
 .card {
-  max-width: 960px;
+  max-width: 460px;
+  max-height: 260px;
+
   border-radius: var(--border-radius-primary);
   box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.1);
   padding: 20px 20px 28px 20px;
   box-sizing: border-box;
   margin: 20px;
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
 }
 @media (min-width: 576px) {
   .card {
@@ -58,9 +61,10 @@
     padding: 32px;
  }
 }
+
 .card__image {
-  width: 100%;
-  max-height: 300px;
+  width: 45%;
+  max-height: none;
   border-radius: var(--border-radius-primary);
   object-fit: cover;
   margin-bottom: 18px;
@@ -68,10 +72,13 @@
 @media (min-width: 576px) {
   .card__image {
     width: 45%;
-    max-height: none;
-    min-height: 400px;
+    max-width: 170px;
+    max-height: 200px;
+    min-height: 100px;
     margin-bottom: 0;
  }
+
+ 
 }
 @media (min-width: 576px) {
   .card__content {
@@ -79,6 +86,8 @@
     padding-left: 40px;
  }
 }
+
+
 .card__date {
   display: block;
   font-family: var(--font-family-secondary);
@@ -93,7 +102,23 @@
     margin-bottom: 8px;
  }
 }
+
 .card__title {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  color: var(--color-text);
+  box-decoration-break: clone;
+  background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));
+  background-size: 100% 42%;
+  background-repeat: no-repeat;
+  background-position: 0 85%;
+  padding: 0 4px;
+  margin-left: -4px;
+}
+#card-2 .card__title {
+  --color-highlight-primary: #aad0fc;
+  --color-highlight-secondary: #a2b1da;
   font-family: var(--font-family-primary);
   font-size: var(--font-size-title);
   line-height: var(--line-height-title);
