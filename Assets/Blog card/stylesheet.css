@@ -23,12 +23,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  height: 1000px;
-  display: flex;
-  justify-content: center;
-}
-
 .list-card {
   display: flex;
   flex-direction: column;
