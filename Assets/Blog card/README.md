@@ -4,11 +4,11 @@
 The best way to learn how to create these different layouts is to try them ourselves.  
 So let's try it ! 💥 <br />
 
-This project was made for my personal portfolio website.<br />  
+This project was made for my personal portfolio website. 
 
 # 🚀 Starting
 
-To start the project, just open the file `index.html` in your preferred browser.  <br />
+To start the project, just open the file `index.html` in your preferred browser.  
 
 
 ## 💻 Web Version 
@@ -25,7 +25,6 @@ To start the project, just open the file `index.html` in your preferred browser.
 
 ### **Sources** 
 - _https://codepen.io/HenrikFricke/pen/GRNYrXK_  
-  <br />
-  <br />
+  
 ---
 ##### Coded with love by Antoine F. 💙
