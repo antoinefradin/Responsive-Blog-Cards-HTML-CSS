@@ -12,7 +12,7 @@
   --color-highlight-secondary: #a8dab4;
   --border-radius-primary: 32px;
 }
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   :root {
     --font-size-title: 20px;
  }
