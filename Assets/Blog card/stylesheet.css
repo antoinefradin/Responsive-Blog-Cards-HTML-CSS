@@ -3,9 +3,9 @@
 :root {
   --font-family-primary: 'Poppins', serif;
   --font-family-secondary: 'PT Sans', sans-serif;
-  --font-size-title: 32px;
+  --font-size-title: 16px;
   --line-height-title: 1.4;
-  --font-size-caption: 11px;
+  --font-size-caption: 9px;
   --line-height-caption: 1.2;
   --color-text: #222022;
   --color-highlight-primary: #ceff7e;
