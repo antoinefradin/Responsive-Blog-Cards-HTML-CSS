@@ -3,20 +3,20 @@
 :root {
   --font-family-primary: 'Poppins', serif;
   --font-family-secondary: 'PT Sans', sans-serif;
-  --font-size-title: 16px;
+  --font-size-title: 32px;
   --line-height-title: 1.4;
-  --font-size-caption: 9px;
+  --font-size-caption: 11px;
   --line-height-caption: 1.2;
   --color-text: #222022;
   --color-highlight-primary: #ceff7e;
   --color-highlight-secondary: #a8dab4;
   --border-radius-primary: 32px;
 }
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   :root {
     --font-size-title: 20px;
  }
-}
+}*/
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -30,8 +30,8 @@
   align-items: center;
   width: auto; /*100vw;*/
   height: auto; /*100vh;*/
-  padding: 0;
-  margin: 0;
+  padding: 5px;
+  margin: 5px;
 }
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (min-width: 1200px) {
@@ -53,12 +53,23 @@
   display: flex;
   /*flex-direction: column;*/
 }
-@media (min-width: 576px) {
+@media (min-width: 1200px) {
   .card {
     flex-direction: row;
     align-items: center;
     margin: 40px;
     padding: 32px;
+ }
+}
+@media (max-width: 500px) {
+  .card {
+    max-width: auto;
+    max-height: auto;
+
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+    padding: 22px;
  }
 }
 
