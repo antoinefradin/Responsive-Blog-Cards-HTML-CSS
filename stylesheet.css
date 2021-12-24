@@ -1,0 +1,103 @@
+/*## This is CSS file"*/
+
+:root {
+  --font-family-primary: 'Poppins', serif;
+  --font-family-secondary: 'PT Sans', sans-serif;
+  --font-size-title: 20px;
+  --line-height-title: 1.4;
+  --font-size-caption: 11px;
+  --line-height-caption: 1.2;
+  --color-text: #222022;
+  --color-highlight-primary: #ceff7e;
+  --color-highlight-secondary: #a8dab4;
+  --border-radius-primary: 32px;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto; /*100vw;*/
+  height: auto; /*100vh;*/
+  padding: 5px;
+  margin: 5px;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (min-width: 1200px) {
+  .list-card {
+    flex-direction: row;
+ }
+}
+
+
+.card {
+  max-width: 460px;
+  max-height: 260px;
+  border-radius: var(--border-radius-primary);
+  box-shadow: 24px 24px 80px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  /*flex-direction: column;*/
+}
+@media (min-width: 1200px) {
+  .card {
+    flex-direction: row;
+    align-items: center;
+    margin: 40px;
+    padding: 25px;
+ }
+}
+
+.card__image {
+  width: 40%;
+  max-height: none;
+  border-radius: var(--border-radius-primary);
+  object-fit: cover;
+}
+
+.card__content {
+  width: 60%;
+  padding-left: 30px;
+}
+
+.card__date {
+  display: block;
+  font-family: var(--font-family-secondary);
+  font-size: var(--font-size-caption);
+  line-height: var(--line-height-caption);
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: 8px;
+}
+
+
+.card__title {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  color: var(--color-text);
+  box-decoration-break: clone;
+  background-image: linear-gradient(90deg, var(--color-highlight-primary), var(--color-highlight-secondary));
+  background-size: 100% 42%;
+  background-repeat: no-repeat;
+  background-position: 0 85%;
+  padding: 0 4px;
+  margin-left: -4px;
+}
+#card-2 .card__title {
+  --color-highlight-primary: #aad0fc;
+  --color-highlight-secondary: #a2b1da;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-title);
+  line-height: var(--line-height-title);
+  color: var(--color-text);
+}
